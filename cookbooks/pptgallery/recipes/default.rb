@@ -81,8 +81,8 @@ end
 	end
 end
 
-cookbook_file "/tmp/LibreOffice.tar.gz" do
-	source "LibreOffice_4.1.3_Linux_x86-64_rpm.tar.gz"
+remote_file "/tmp/LibreOffice.tar.gz" do
+	source "#{node.libreoffice.download}"
 	owner "vagrant"
 	group "vagrant"
 	mode "0644"
