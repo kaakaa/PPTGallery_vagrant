@@ -126,7 +126,7 @@ git "/home/vagrant/PPTGallery" do
 	user "vagrant"
 	group "vagrant"
 	repository "https://github.com/kaakaa/PPTGallery.git"
-	reference "master"
+	reference "log"
 	action :sync
 end
 
