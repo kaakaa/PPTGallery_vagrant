@@ -15,7 +15,7 @@ git submodule init
 git submodule update
 ```
 
-And then add iptables setting in iptables cookbooks.
+And then add iptables setting in iptables cookbooks for port using foreman.
 
 ```
 touch cookbooks/iptables/templates/default/http.rb
