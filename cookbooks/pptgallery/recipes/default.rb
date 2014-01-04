@@ -93,7 +93,7 @@ bash "install_libre_office" do
 	cwd "/tmp"
 	code <<-EOH
 	  tar xvf LibreOffice.tar.gz
-	  rpm -ivh LibreOffice_4.1.3.2_Linux_x86-64_rpm/RPMS/*.rpm
+	  rpm -ivh LibreOffice_4.1.4.2_Linux_x86-64_rpm/RPMS/*.rpm
 	EOH
 end
 
@@ -126,7 +126,7 @@ git "/home/vagrant/PPTGallery" do
 	user "vagrant"
 	group "vagrant"
 	repository "https://github.com/kaakaa/PPTGallery.git"
-	reference "log"
+	reference "master"
 	action :sync
 end
 
