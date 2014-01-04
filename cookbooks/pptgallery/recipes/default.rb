@@ -4,6 +4,7 @@
 
 remote_file "/tmp/rpmforge.rpm" do
 	source "http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.i686.rpm"
+	action :create_if_missing
 	owner "vagrant"
 	group "vagrant"
 end
