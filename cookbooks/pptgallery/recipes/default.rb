@@ -94,7 +94,7 @@ bash "install_libre_office" do
 	cwd "/tmp"
 	code <<-EOH
 	  tar xvf LibreOffice.tar.gz
-	  rpm -ivh LibreOffice_4.1.4.2_Linux_x86-64_rpm/RPMS/*.rpm
+	  rpm -ivh LibreOffice_4.2.2.1_Linux_x86-64_rpm/RPMS/*.rpm
 	EOH
 end
 
@@ -106,7 +106,7 @@ bash "setup_libreoffice" do
 	timeout 300
 	code <<-EOH
 	  unset DISPLAY
-	  /opt/libreoffice4.1/program/soffice --headless --invisible --nologo --accept="socket,host=127.0.0.1,port=8100;urp;"
+	  /opt/libreoffice4.2/program/soffice --headless --invisible --nologo --accept="socket,host=127.0.0.1,port=8100;urp;"
 	EOH
 	retries 3
 end
